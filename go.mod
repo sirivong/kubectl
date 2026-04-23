@@ -94,4 +94,4 @@ require (
 	sigs.k8s.io/kustomize/api v0.21.1 // indirect
 )
 
-replace k8s.io/code-generator => k8s.io/code-generator v0.0.0-20260423023311-5e27957eb856
+replace k8s.io/code-generator => k8s.io/code-generator v0.0.0-20260423023312-0e27eb201126
