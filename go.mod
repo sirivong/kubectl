@@ -19,7 +19,7 @@ require (
 	github.com/liggitt/tabwriter v0.0.0-20181228230101-89fcab3d43de
 	github.com/lithammer/dedent v1.1.0
 	github.com/mitchellh/go-wordwrap v1.0.1
-	github.com/moby/term v0.5.0
+	github.com/moby/term v0.5.2
 	github.com/onsi/ginkgo/v2 v2.28.1
 	github.com/onsi/gomega v1.39.1
 	github.com/russross/blackfriday/v2 v2.1.0
@@ -30,16 +30,16 @@ require (
 	golang.org/x/sys v0.43.0
 	golang.org/x/text v0.36.0
 	gopkg.in/evanphx/json-patch.v4 v4.13.0
-	k8s.io/api v0.0.0-20260426030808-9c98ac1a4c3f
-	k8s.io/apimachinery v0.0.0-20260426030426-a95d60f48830
-	k8s.io/cli-runtime v0.0.0-20260427195137-000158f2029f
-	k8s.io/client-go v0.0.0-20260427191358-f854ec26d274
-	k8s.io/component-base v0.0.0-20260427192044-46e6750c0ac5
-	k8s.io/component-helpers v0.0.0-20260427192238-a6ec575c56e7
+	k8s.io/api v0.0.0
+	k8s.io/apimachinery v0.0.0
+	k8s.io/cli-runtime v0.0.0
+	k8s.io/client-go v0.0.0
+	k8s.io/component-base v0.0.0
+	k8s.io/component-helpers v0.0.0
 	k8s.io/klog/v2 v2.140.0
 	k8s.io/kube-openapi v0.0.0-20260317180543-43fb72c5454a
-	k8s.io/metrics v0.0.0-20260427194920-2bafcdd92f19
-	k8s.io/streaming v0.0.0-20260424110149-99242c80ea4f
+	k8s.io/metrics v0.0.0
+	k8s.io/streaming v0.0.0
 	k8s.io/utils v0.0.0-20260210185600-b8788abfbbc2
 	sigs.k8s.io/json v0.0.0-20250730193827-2d320260d730
 	sigs.k8s.io/kustomize/kustomize/v5 v5.8.1
@@ -50,7 +50,7 @@ require (
 )
 
 require (
-	github.com/Azure/go-ansiterm v0.0.0-20230124172434-306776ec8161 // indirect
+	github.com/Azure/go-ansiterm v0.0.0-20250102033503-faa5f7b0171c // indirect
 	github.com/Masterminds/semver/v3 v3.4.0 // indirect
 	github.com/blang/semver/v4 v4.0.0 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
@@ -101,4 +101,16 @@ require (
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	sigs.k8s.io/kustomize/api v0.21.1 // indirect
+)
+
+replace (
+	k8s.io/api => ../api
+	k8s.io/apimachinery => ../apimachinery
+	k8s.io/cli-runtime => ../cli-runtime
+	k8s.io/client-go => ../client-go
+	k8s.io/code-generator => ../code-generator
+	k8s.io/component-base => ../component-base
+	k8s.io/component-helpers => ../component-helpers
+	k8s.io/metrics => ../metrics
+	k8s.io/streaming => ../streaming
 )
